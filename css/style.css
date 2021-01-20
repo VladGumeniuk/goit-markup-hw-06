@@ -31,7 +31,7 @@ ul {
 .container {
   margin-right: auto;
   margin-left: auto;
-  width: 1230px;
+  width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
 }
@@ -680,10 +680,7 @@ ul {
 .footer-position {
   display: flex;
   align-items: baseline;
-}
-
-.footer-link {
-  margin-left: 70px;
+  justify-content: space-between;
 }
 
 .footer-text {
@@ -750,7 +747,6 @@ ul {
 
 .form-footer {
   width: 570px;
-  margin-left: 93px;
 }
 
 .footer-container {
@@ -873,6 +869,9 @@ ul {
 .modal-exit {
   display: block;
   margin-left: auto;
+  margin-right: 8px;
+  margin-top: 8px;
+
   width: 30px;
   height: 30px;
 
@@ -881,6 +880,7 @@ ul {
   cursor: pointer;
 
   color: #333;
+  background-color: #fff;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -987,6 +987,11 @@ ul {
   border-radius: 4px;
 
   outline: none;
+}
+
+.form-contacts textarea:hover,
+.form-contacts textarea:focus {
+  border: 1px solid #2196f3;
 }
 
 .form-policy {
