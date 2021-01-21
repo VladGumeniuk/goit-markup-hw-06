@@ -876,7 +876,7 @@ ul {
   height: 30px;
 
   border-radius: 50%;
-  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
 
   color: #333;
@@ -1005,11 +1005,42 @@ ul {
 }
 
 .form-policy label {
+  display: inline-flex;
+  align-items: center;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
 
   color: #757575;
+}
+
+.modal-checkbox {
+  display: inline-block;
+  margin-right: 8px;
+
+  bottom: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+
+  border: 2px solid #212121;
+  border-radius: 3px;
+}
+
+.checkbox {
+  -webkit-appearance: none;
+  appearance: none;
+
+  position: absolute;
+}
+
+.checkbox:checked + .modal-checkbox {
+  border: 2px solid #2196f3;
+  background-color: #2196f3;
+  background-image: url("../img/modal/iconcheck.svg");
+  background-size: contain;
+  background-origin: border-box;
 }
 
 .modal-link-color {

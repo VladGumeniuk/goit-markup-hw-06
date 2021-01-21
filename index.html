@@ -366,8 +366,11 @@
                         <textarea name="commit" id=" commit" rows="10" placeholder="Введите текст"></textarea>
                     </div>                  
                     <div class="form-policy">
-                        <input type="checkbox" name="policy" id="policy">
-                        <label for="policy">Соглашаюсь с рассылкой и принимаю <a class="modal-link-color" href="">Условия договора</a></label>
+                        <label for="policy">
+                            <input class="checkbox" type="checkbox" name="policy" id="policy">
+                            <span class="modal-checkbox"></span>
+                            Соглашаюсь с рассылкой и принимаю <a class="modal-link-color" href="">Условия договора</a>
+                        </label>
                     </div>
                     <button class="modal-button" type="submit">Отправить</button>         
                 </form>
